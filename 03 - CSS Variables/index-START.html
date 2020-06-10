@@ -26,6 +26,12 @@
       misc styles, nothing to do with CSS variables
     */
 
+    :root {
+      --main-color: #ffc600;
+      --main-padding: 10px;
+      --main-blur: ;
+    }
+
     body {
       text-align: center;
       background: #193549;
@@ -42,10 +48,19 @@
     input {
       width: 100px;
     }
+
+    img {
+      background-color: var(--main-color);
+      padding: var(--main-padding);
+      filter: blur(var(--main-blur));
+    }
+
+    .hl {
+      color: var(--main-color);
+    }
   </style>
 
-  <script>
-  </script>
+  <script src="index.js"></script>
 
 </body>
 </html>
